@@ -19,12 +19,19 @@
   ตอบโจทย์ทั้งผู้เข้าร่วมกิจกรรมและผู้จัดงาน ด้วยระบบที่ทันสมัย สะดวก ใช้งานง่าย และครอบคลุมทุกกระบวนการ
 </p>
 
+<p align="center">
+  <img src="EventHub/หน้าหลัก.png" alt="EventHub Main Interface" width="92%" style="border-radius: 10px; box-shadow: 0 4px 20px rgba(0,0,0,0.12);">
+</p>
+
 </div>
 
 ---
 
 ## 📌 สารบัญ (Table of Contents)
 
+- [📸 ภาพตัวอย่างหน้าจอระบบ (UI Prototype Showcase)](#-ภาพตัวอย่างหน้าจอระบบ-ui-prototype-showcase)
+  - [1. ฝั่งผู้ใช้งานทั่วไป / นักศึกษา (User & Student Flow)](#1-ฝั่งผู้ใช้งานทั่วไป--นักศึกษา-user--student-flow)
+  - [2. ฝั่งผู้ดูแลระบบ / ผู้จัดงาน (Admin & Organizer Flow)](#2-ฝั่งผู้ดูแลระบบ--ผู้จัดงาน-admin--organizer-flow)
 - [✨ ไฮไลท์และฟีเจอร์เด่น (Key Features)](#-ไฮไลท์และฟีเจอร์เด่น-key-features)
   - [สำหรับผู้ใช้งาน / นักศึกษา (User / Student)](#-สำหรับผู้ใช้งาน--นักศึกษา-user--student)
   - [สำหรับผู้ดูแลระบบ / ผู้จัดงาน (Admin / Organizer)](#-สำหรับผู้ดูแลระบบ--ผู้จัดงาน-admin--organizer)
@@ -36,7 +43,96 @@
   - [ขั้นตอนการติดตั้ง (Setup Steps)](#ขั้นตอนการติดตั้ง-setup-steps)
 - [📂 โครงสร้างโปรเจกต์ (Project Structure)](#-โครงสร้างโปรเจกต์-project-structure)
 - [🔒 สิทธิ์การใช้งานและบัญชีผู้ใช้ (Roles & Access)](#-สิทธิ์การใช้งานและบัญชีผู้ใช้-roles--access)
+- [👥 ผู้พัฒนา (Author & Contributors)](#-ผู้พัฒนา-author--contributors)
 - [📄 ใบอนุญาต (License)](#-ใบอนุญาต-license)
+
+---
+
+## 📸 ภาพตัวอย่างหน้าจอระบบ (UI Prototype Showcase)
+
+### 1. ฝั่งผู้ใช้งานทั่วไป / นักศึกษา (User & Student Flow)
+
+#### 🔐 ระบบเข้าสู่ระบบและสมัครสมาชิก (Authentication)
+<table>
+  <tr>
+    <td width="50%" align="center"><strong>หน้าเข้าสู่ระบบ (Login)</strong></td>
+    <td width="50%" align="center"><strong>หน้าลงทะเบียนผู้ใช้ใหม่ (Register)</strong></td>
+  </tr>
+  <tr>
+    <td><img src="EventHub/Login.png" alt="หน้าเข้าสู่ระบบ" width="100%"></td>
+    <td><img src="EventHub/Register.png" alt="หน้าสมัครสมาชิก" width="100%"></td>
+  </tr>
+</table>
+
+#### 🔍 ค้นหาและดูรายละเอียดกิจกรรม (Discovery & Details)
+<table>
+  <tr>
+    <td width="50%" align="center"><strong>หน้าค้นหาและคัดกรองกิจกรรม (Search & Filter)</strong></td>
+    <td width="50%" align="center"><strong>หน้ารายละเอียดกิจกรรม (Event Details)</strong></td>
+  </tr>
+  <tr>
+    <td><img src="EventHub/ค้นหาอีเว้นท์.png" alt="ค้นหาอีเว้นท์" width="100%"></td>
+    <td><img src="EventHub/รายละเอียดอีเว้นท์.png" alt="รายละเอียดอีเว้นท์" width="100%"></td>
+  </tr>
+</table>
+
+#### 📝 ลงทะเบียนเข้าร่วมและติดตามสถานะ (Registration & Tracker)
+<table>
+  <tr>
+    <td width="50%" align="center"><strong>แบบฟอร์มลงทะเบียนเข้าร่วม (Event Registration)</strong></td>
+    <td width="50%" align="center"><strong>ประวัติและสถานะการเข้าร่วม (My Events)</strong></td>
+  </tr>
+  <tr>
+    <td><img src="EventHub/ลงทะเบียนอีเว้นท์.png" alt="ลงทะเบียนอีเว้นท์" width="100%"></td>
+    <td><img src="EventHub/ประวัติเข้าร่วมอีเว้นท์.png" alt="ประวัติเข้าร่วมอีเว้นท์" width="100%"></td>
+  </tr>
+</table>
+
+#### ⭐ แบบประเมินและให้คะแนนความพึงพอใจ (Evaluation & Feedback)
+<div align="center">
+  <img src="EventHub/หน้าประเมินผล.png" alt="หน้าประเมินผล" width="85%">
+  <p><em>หน้าแบบประเมินความพึงพอใจและให้คะแนนระดับ 1-5 ดาวหลังเสร็จสิ้นกิจกรรม</em></p>
+</div>
+
+<br>
+
+### 2. ฝั่งผู้ดูแลระบบ / ผู้จัดงาน (Admin & Organizer Flow)
+
+#### 📊 แดชบอร์ดภาพรวมกิจกรรม (Admin Dashboard)
+<div align="center">
+  <img src="EventHub/หน้าหลักแอดมิน.png" alt="หน้าหลักแอดมิน" width="90%">
+  <p><em>ศูนย์ควบคุมและจัดการกิจกรรม พร้อมคัดกรองสถานะกิจกรรม</em></p>
+</div>
+
+#### ➕ การสร้างและแก้ไขกิจกรรม (Event Creation & Management)
+<table>
+  <tr>
+    <td width="50%" align="center"><strong>หน้าสร้างกิจกรรมใหม่ (Create Event)</strong></td>
+    <td width="50%" align="center"><strong>หน้าแก้ไขข้อมูลกิจกรรม (Edit Event)</strong></td>
+  </tr>
+  <tr>
+    <td><img src="EventHub/สร้างอีเว้นท์.png" alt="สร้างอีเว้นท์" width="100%"></td>
+    <td><img src="EventHub/แก้ไขอีเว้นท์.png" alt="แก้ไขอีเว้นท์" width="100%"></td>
+  </tr>
+</table>
+
+#### 👥 การตรวจสอบและอนุมัติผู้เข้าร่วม (Participant Approval & Bulk Action)
+<table>
+  <tr>
+    <td width="50%" align="center"><strong>ภาพรวมผู้สมัครเข้าร่วมกิจกรรม (Participants Overview)</strong></td>
+    <td width="50%" align="center"><strong>ระบบอนุมัติ / ปฏิเสธผู้สมัคร (Approval Actions)</strong></td>
+  </tr>
+  <tr>
+    <td><img src="EventHub/อนุมัติผู้เข้าร่วม.png" alt="อนุมัติผู้เข้าร่วม" width="100%"></td>
+    <td><img src="EventHub/หน้าอนุมัติในอีเว้นท์.png" alt="หน้าอนุมัติในอีเว้นท์" width="100%"></td>
+  </tr>
+</table>
+
+#### 🗑️ หน้าต่างยืนยันการลบกิจกรรม (Delete Confirmation)
+<div align="center">
+  <img src="EventHub/หน้าลบอีเว้นท์.png" alt="หน้าลบอีเว้นท์" width="60%">
+  <p><em>หน้าต่าง Modal ยืนยันความปลอดภัยก่อนดำเนินการลบกิจกรรมออกจากระบบ</em></p>
+</div>
 
 ---
 
@@ -269,6 +365,7 @@ php artisan serve
 
 ```text
 EventHub/
+├── EventHub/                    # ภาพต้นแบบหน้าจอระบบ (UI Prototypes & Screenshots)
 ├── app/
 │   ├── Http/
 │   │   ├── Controllers/         # คอนโทรลเลอร์หลัก (Admin, User, Event, Report ฯลฯ)
